@@ -31,15 +31,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="manage.py" />
+    <Compile Include="Pizzerias\admin.py" />
+    <Compile Include="Pizzerias\apps.py" />
+    <Compile Include="Pizzerias\migrations\__init__.py" />
+    <Compile Include="Pizzerias\models.py" />
+    <Compile Include="Pizzerias\tests.py" />
+    <Compile Include="Pizzerias\views.py" />
+    <Compile Include="Pizzerias\__init__.py" />
     <Compile Include="Pizzeria\__init__.py" />
     <Compile Include="Pizzeria\settings.py" />
     <Compile Include="Pizzeria\urls.py" />
     <Compile Include="Pizzeria\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pizzerias\templates\Pizzerias\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Pizzerias\" />
+    <Folder Include="Pizzerias\migrations\" />
+    <Folder Include="Pizzerias\templates\" />
+    <Folder Include="Pizzerias\templates\Pizzerias\" />
     <Folder Include="Pizzeria\" />
   </ItemGroup>
   <ItemGroup>
