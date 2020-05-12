@@ -1,6 +1,17 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from datetime import datetime
+
 
 def index(request):
-    return HttpResponse("Welcome to the Pizzeria!")
+    now = datetime.now()
 
+    return render(
+        request,
+        "Pizzerias/index.html", 
+        {
+            'title': "The Pizzeria",
+            'message': "WELCOME TO THE PIZZERIA!",
+            'content': "Nice to see you! It's " + now.strftime("%A, %d %B, %Y at %X")
+        }
+    )
