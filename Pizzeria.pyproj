@@ -44,7 +44,10 @@
     <Compile Include="Pizzeria\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Pizzerias\templates\Pizzerias\about.html" />
     <Content Include="Pizzerias\templates\Pizzerias\index.html" />
+    <Content Include="Pizzerias\static\site.css" />
+    <Content Include="Pizzerias\templates\Pizzerias\layout.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +56,7 @@
     <Folder Include="Pizzerias\templates\" />
     <Folder Include="Pizzerias\templates\Pizzerias\" />
     <Folder Include="Pizzeria\" />
+    <Folder Include="Pizzerias\static\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="piz_env\">

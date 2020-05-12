@@ -26,4 +26,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^$', Pizzerias.views.index, name='index'),
     url(r'^home$', Pizzerias.views.index, name='home'),
+    url(r'^about$', Pizzerias.views.about, name='about'),
 ]

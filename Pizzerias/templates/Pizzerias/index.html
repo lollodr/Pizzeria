@@ -1,11 +1,5 @@
-<html>
-    <head>
-        <title>
-            {{ title }}
-        </title>
-    </head>
-    <body>
-        <p> <strong> {{ message }} </strong> </p>
-        <p> {{ content }} </p>
-    </body>
-</html>
+{% extends "Pizzerias/layout.html" %}
+{% block content %}
+<p> <span class="message"> {{ message }} </span> </p>
+<p> {{ content }} </p>
+{% endblock %}
